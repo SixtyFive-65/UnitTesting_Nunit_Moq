@@ -1,0 +1,13 @@
+#TDD -> Write tests before writing the code.
+
+-> Write a failing test
+->Write simpe code to make the test pass
+->refactor if necesary
+
+
+**Benefits -> Testable source code	
+           ->Full coverage by tests
+		   ->results in simpler implementation
+ 
+ 
+ 

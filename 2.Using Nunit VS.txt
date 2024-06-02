@@ -1,0 +1,35 @@
+Open Package Manager Console -> Ensure TestNinja.UnitTests project is selected
+
+PM->install-package NUnit -version 3.8.1     // purposes of lecture to use 3.8.1
+
+PM->install-package NUnit3TestAdapter -version 3.8.0  // To run Nunit test runner in VS
+
+
+Remove MSTest using statement because Assert will be ambigous -> using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
+[TestFixture]  // Instead of Test Class we use TestFixture on NUnit
+public class ReservationTests
+{
+ [Test]  //Instead of test method we use Test on NUnit
+ public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()  //CanBeCancelledBy_Scenario_ExpectedBehavior() : MethodName_Scebario_ExpectedBehavior
+ {
+	 //Arrange  (Initialize the test object - prepare object we want to test) 
+
+	 var reservation = new Reservation();
+
+	 //Act  (Call a method we are going to test)
+
+	 var result = reservation.CanBeCancelledBy(new User { IsAdmin = true});
+
+	 //Assert (Verify that result is true)
+
+	 Assert.That(result, Is.True);
+ }
+}
+
+***you can now Assert in any of the 3 below ways
+ 
+Assert.IsTrue(result);
+Assert.That(result, Is.True);
+Assert.That(result == true);

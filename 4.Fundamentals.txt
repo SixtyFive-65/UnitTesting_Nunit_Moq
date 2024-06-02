@@ -1,0 +1,20 @@
+***Characreristics of good unit tests
+
+  -> Each test should have a single responsibility
+  ->No logic (no conditional statements etc)
+  -> Isolated, tests should not call each other
+  ->not too specific/General
+  
+*What To Test -> Queries/ Commands
+
+*What not to Test -> Langage features / 3rd party code
+
+ 
+# Naming and organizing tests :->  Separate test projects (Blogz.Api -> should have Blogz.UnitTests)
+							  :> should have a test class for every class (Comment, should have CommentTests)
+							  :-> for each method in the Comment class we should have 1 or more test methods
+
+Naming convention = [MethodName]_[Scenario]_[ExpectedBehavior]
+
+**If there are too many test scenarios for a method, group them in their own class e.g CommentTests.IsUserAllowedToComment()
+

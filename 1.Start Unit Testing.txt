@@ -1,0 +1,88 @@
+# Create New Project, type : = Unit Test Project
+
+
+*Every test method has 3 parts  method name      scenario  expectedBehavior
+					public void	CanBeCancelledBy_Scenario_ExpectedBehavior()
+					
+
+* Testing follows AAA (Arrange, Act, Assert)
+*All Test Methods are Void methods
+
+
+1.
+namespace TestNinja.UnitTests
+{
+    [TestClass]
+    public class ReservationTests
+    {
+        [TestMethod] // decorate methods so they can eb picked up by the test runner.
+        public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()  //CanBeCancelledBy_Scenario_ExpectedBehavior() : MethodName_Scebario_ExpectedBehavior
+        {
+            //Arrange  (Initialize the test object - prepare object we want to test) 
+
+            var reservation = new Reservation();
+
+            //Act  (Call a method we are going to test)
+
+            var result = reservation.CanBeCancelledBy(new User { IsAdmin = true});
+
+            //Assert (Verify that result is true)
+
+            Assert.IsTrue(result);
+        }
+    }
+}
+
+Goto Test-> Run All Tests (VS doesn't allow to run specific tests, it runs all tests)
+
+[TestMethod]
+public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()  //CanBeCancelledBy_Scenario_ExpectedBehavior() : MethodName_Scebario_ExpectedBehavior
+{
+	//Arrange  (Initialize the test object - prepare object we want to test) 
+
+	var reservation = new Reservation();
+
+	//Act  (Call a method we are going to test)
+
+	var result = reservation.CanBeCancelledBy(new User { IsAdmin = true});
+
+	//Assert (Verify that result is true)
+
+	Assert.IsTrue(result);
+}
+
+[TestMethod]
+public void CanBeCancelledBy_MadeByUser_ReturnsTrue()  //CanBeCancelledBy_Scenario_ExpectedBehavior() : MethodName_Scebario_ExpectedBehavior
+{
+	//Arrange  (Initialize the test object - prepare object we want to test) 
+
+	var user = new User();
+
+	var reservation = new Reservation() { MadeBy = user};
+
+	//Act  (Call a method we are going to test)
+
+	var result = reservation.CanBeCancelledBy(reservation.MadeBy);
+
+	//Assert (Verify that result is true)
+
+	Assert.IsTrue(result);
+}
+
+[TestMethod]
+public void CanBeCancelledBy_NotAdminOrUser_ReturnsFalse()  //CanBeCancelledBy_Scenario_ExpectedBehavior() : MethodName_Scebario_ExpectedBehavior
+{
+	//Arrange  (Initialize the test object - prepare object we want to test) 
+
+	var reservation = new Reservation();
+
+	//Act  (Call a method we are going to test)
+
+	var result = reservation.CanBeCancelledBy(new User { IsAdmin = false});
+
+	//Assert (Verify that result is true)
+
+	Assert.IsFalse(result);
+}
+
+ 					

@@ -1,0 +1,80 @@
+1. take a number and return a string ;
+
+public class FizzBuzz
+{
+	public static string GetOutput(int number)
+	{
+		if ((number % 3 == 0) && (number % 5 == 0))  // 15 is divisible by both 3 and 5
+			return "FizzBuzz";
+
+		if (number % 3 == 0)
+			return "Fizz";
+
+		if (number % 5 == 0)
+			return "Buzz";
+
+		return number.ToString(); 
+	}
+}
+
+[Test]
+[TestCase(15, "FizzBuzz")]
+[TestCase(3, "Fizz")]
+[TestCase(5, "Buzz")]
+[TestCase(1, "1")]
+
+public void GetOutput_ReturnFizzBuzzString_ReturnStringOrNumber(int a, string expectedResult)
+{
+	var result = FizzBuzz.GetOutput(a);
+
+	Assert.That(result, Is.EqualTo(expectedResult));
+}
+
+
+2.
+
+public class DemeritPointsCalculator
+{
+	private const int SpeedLimit = 65;
+	private const int MaxSpeed = 300;
+	
+	public int CalculateDemeritPoints(int speed)
+	{
+		if (speed < 0 || speed > MaxSpeed) 
+			throw new ArgumentOutOfRangeException();
+		
+		if (speed <= SpeedLimit) return 0; 
+		
+		const int kmPerDemeritPoint = 5;
+		var demeritPoints = (speed - SpeedLimit)/kmPerDemeritPoint;
+
+		return demeritPoints;
+	}        
+}
+
+[Test]
+
+public void CalculateDemeritPoints_CalculatePointsBySpeed_ReturnArgumentNulls()
+{
+	var demit = new DemeritPointsCalculator();
+
+	Assert.That(() => demit.CalculateDemeritPoints(-1), Throws.Exception.TypeOf<ArgumentOutOfRangeException>());
+}
+[Test]
+public void CalculateDemeritPoints_CalculatePointsBySpeed_Return0()
+{
+	var demit = new DemeritPointsCalculator();
+
+	var result = demit.CalculateDemeritPoints(65);
+
+	Assert.That(result, Is.EqualTo(0));
+}
+[Test]
+public void CalculateDemeritPoints_CalculatePointsBySpeed_ReturnDemiritPoints()
+{
+	var demit = new DemeritPointsCalculator();
+
+	var result = demit.CalculateDemeritPoints(130);
+
+	Assert.That(result, Is.EqualTo(13));
+}

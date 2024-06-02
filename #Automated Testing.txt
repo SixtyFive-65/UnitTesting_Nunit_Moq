@@ -1,0 +1,21 @@
+Automated Testing -> Write code that tests our code in an automated fashion.
+
+Benefits of Automated Testing :->Catch bugs before deploying
+							   ->Refactor with confidence (changing the structure of code without changing functionality)
+							   ->Focus more on quality
+
+Different Types of Tests
+		-> Unit Test (test a unit of application without its external dependencies (Db, Files, Queues or classes)) :Fast and easy to write
+		-> Integration Test (tests the application with external dependencies (Db, Files, Queues or classes))
+		->End to End Test (tests  through UI)  : Slow
+
+		
+							   
+Favor unit tests over E2E
+Cover unit test gaps with integration tests.
+use end E2E tests for key functions of the application.
+
+
+
+
+

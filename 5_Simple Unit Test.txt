@@ -1,0 +1,48 @@
+# SetUp attribute->  method will get called before running each test   ---> Initialize project to be tested.
+# TestCase atribute allows the use of 1 method to test multiple cases   :-> Available in NUnit
+#Ignore atribute will ingore a specific test
+
+#TearDown attribute  method will get called after running each test
+
+1.
+[Test]
+[Ignore("Cause I can")]
+public void Add_Add2Numbers_NumbersAdded()
+{
+	var sum = _math.Add(1, 2) ; //Act
+
+	Assert.That(sum , Is.EqualTo(3)); //Assert
+}
+
+2.
+[TestFixture]
+public class MathTests
+{
+	private Math _math;
+
+	[SetUp]
+	public void SetUp()
+	{
+		_math = new Math();  //Arrrange
+	}
+	[Test]
+
+	public void Add_Add2Numbers_NumbersAdded()
+	{
+		var sum = _math.Add(1, 2) ; //Act
+
+		Assert.That(sum , Is.EqualTo(3)); //Assert
+	}
+
+	[Test]
+	[TestCase(2,1,2)]  // a =2, b = 1, expectedResult = 2
+	[TestCase(1,2,2)]  // a = a, b =2, expectedResult = 2
+	[TestCase(1,1,1)]   // a = 1, b = 1, expectedResult = 1
+	public void Max_ReturnGreatorArgument_ReturnTheGreaterArgument(int a, int b, int expectedResult)
+	{
+		expectedResult = _math.Max(a, b);
+
+		Assert.That(expectedResult, Is.EqualTo(expectedResult));
+	}
+}
+

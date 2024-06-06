@@ -1,0 +1,46 @@
+*** Testing an Interface with a different interface dependency
+
+1. Service/ Implementation class
+
+private readonly IStorage _storage;
+
+public OrderService(IStorage storage)
+{
+	_storage = storage;
+}
+
+public int PlaceOrder(Order order)
+{
+	var orderId = _storage.Store(order);
+	
+	// Some other work
+
+	return orderId; 
+}
+}
+
+public class Order
+{
+}
+
+public interface IStorage
+{
+	int Store(object obj);
+}
+
+2.
+
+[Test]
+public void PlaceOder_WhenCalled_StoreTheOder()
+{
+	var storage = new Mock<IStorage>();
+	
+	var service = new OrderService(storage.Object);
+
+	var oder = new Order();
+
+	service.PlaceOrder(oder);
+
+	storage.Verify( s => s.Store(oder));
+
+}

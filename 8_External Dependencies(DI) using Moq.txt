@@ -1,0 +1,63 @@
+-> Install Moq nuget package
+
+   -> allows us to mock objects without creating physical mock files
+   
+1. Create interface and implemet the method
+
+public interface IFileReader
+{
+	string Read(string path);
+}
+
+public class VideoService_FileReader : IFileReader
+{
+	public string Read(string path)
+	{
+		var str = File.ReadAllText(path);
+
+		return str;
+	}
+}
+
+2. Change Service to use interface implementation if it doesn't already which it should.
+
+private readonly IFileReader fileReader;
+
+public VideoService(IFileReader fileReader = null)
+{
+	this.fileReader = fileReader ?? new VideoService_FileReader();
+}
+public string ReadVideoTitle()
+{
+	var str = fileReader.Read("video.txt");
+
+	var video = JsonConvert.DeserializeObject<Video>(str);
+	if (video == null)
+		return "Error parsing the video.";
+	return video.Title;
+}
+
+3. Run Test 
+
+public class VideoServiceTests
+{
+	private Mock<IFileReader> fileReader = new Mock<IFileReader>();
+	private VideoService service = new VideoService();
+
+	[SetUp]
+	public void Setup()  // Setup helps us re-use Arranging without duplicating code
+	{
+		this.fileReader = new Mock<IFileReader>(); // Create mock object for IFileReader interface
+		service = new VideoService(fileReader.Object);
+	}
+
+	[Test]
+	public void ReadVideoTitle_EmptyFile_ReturnError()
+	{
+		fileReader.Setup(fr => fr.Read("video.txt")).Returns("");
+
+		var result = service.ReadVideoTitle();
+
+		Assert.That(result, Does.Contain("error").IgnoreCase);
+	}
+}

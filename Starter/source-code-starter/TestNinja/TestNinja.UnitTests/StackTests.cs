@@ -84,5 +84,5 @@ namespace TestNinja.UnitTests
 
             Assert.That(p, Is.Not.Null);
         }
-    }
+    } 
 }

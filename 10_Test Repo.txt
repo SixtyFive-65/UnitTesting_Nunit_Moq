@@ -1,0 +1,97 @@
+
+1. Create a Repo to do the external calls..
+
+namespace TestNinja.Mocking
+{
+    public interface IInstallerHerlperRepo
+    {
+        bool DownloadInstaller(string customerName, string installerName);
+    }
+
+    public class InstallerHerlperRepo : IInstallerHerlperRepo
+    {
+        private string _setupDestinationFile;
+        public bool DownloadInstaller(string customerName, string installerName)
+        {
+            var client = new WebClient();
+            try
+            {
+                client.DownloadFile(
+                    string.Format("http://example.com/{0}/{1}",
+                        customerName,
+                        installerName),
+                    _setupDestinationFile);
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+    }
+}
+
+2. Service Class to call from controller....
+
+public class InstallerHelper
+{
+	private string _setupDestinationFile;
+	private readonly IInstallerHerlperRepo repo;
+
+	public InstallerHelper(IInstallerHerlperRepo repo = null)
+	{
+		this.repo = repo;
+	}
+
+	public bool DownloadInstaller(string customerName, string installerName)
+	{
+		try
+		{
+			return repo.DownloadInstaller("","");
+		}
+		catch (WebException)
+		{
+			return false; 
+		}
+	}
+}
+
+3. Test class 
+
+[TestFixture]
+public class InstallerHelperTets
+{
+	private Mock<IInstallerHerlperRepo> installerHelper = new Mock<IInstallerHerlperRepo>();
+
+	private InstallerHelper service = new InstallerHelper();
+
+	[SetUp]
+	public void Setup()
+	{
+		installerHelper = new Mock<IInstallerHerlperRepo>();
+		service = new InstallerHelper(installerHelper.Object);
+	}
+
+	[Test]
+	[TestCase("Sub","Mxo")]
+	public void DownloadInstaller_DownloadFaied_ReturnFalse(string n, string m)
+	{
+		installerHelper.Setup(p => p.DownloadInstaller(n,m));
+
+		var result = service.DownloadInstaller(n,m);
+
+		Assert.That(result, Is.EqualTo(false));
+	}
+
+	[Test]
+	[TestCase("Sub", "Mxo")]
+	public void DownloadInstaller_DownloadSuccess_ReturnTrue(string n, string m)
+	{
+		installerHelper.Setup(p => p.DownloadInstaller(n, m));
+
+		var result = service.DownloadInstaller(n, m);
+
+		Assert.That(result, Is.EqualTo(false));
+	}
+}

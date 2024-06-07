@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj": {}
+  },
+  "projects": {
+    "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj",
+        "projectName": "TestCosole",
+        "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj",
+        "packagesPath": "C:\\Users\\MMahlalela\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MMahlalela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ragingriver.pkgs.visualstudio.com/_packaging/Horus/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj": {
+                "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
+        "projectName": "TestNinja.UnitTests",
+        "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\TestNinja.csproj": {
+                "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\TestNinja.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\TestNinja.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\TestNinja.csproj",
+        "projectName": "TestNinja",
+        "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\TestNinja.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "TestNinja/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TestNinja.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestNinja.dll": {}
+        }
+      },
+      "TestNinja.UnitTests/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "TestNinja": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TestNinja.UnitTests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestNinja.UnitTests.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestNinja/1.0.0": {
+      "type": "project",
+      "path": "../TestNinja/TestNinja.csproj",
+      "msbuildProject": "../TestNinja/TestNinja.csproj"
+    },
+    "TestNinja.UnitTests/1.0.0": {
+      "type": "project",
+      "path": "../TestNinja.UnitTests/TestNinja.UnitTests.csproj",
+      "msbuildProject": "../TestNinja.UnitTests/TestNinja.UnitTests.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "TestNinja.UnitTests >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MMahlalela\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj",
+      "projectName": "TestCosole",
+      "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\TestCosole.csproj",
+      "packagesPath": "C:\\Users\\MMahlalela\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MMahlalela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://ragingriver.pkgs.visualstudio.com/_packaging/Horus/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj": {
+              "projectPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

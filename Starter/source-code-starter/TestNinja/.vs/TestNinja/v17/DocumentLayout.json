@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1EC75A7-C804-4720-AEED-189BFDF00B8D}|TestNinja.UnitTests\\TestNinja.UnitTests.csproj|c:\\code\\repos\\unit testing nunit and moq\\starter\\source-code-starter\\testninja\\testninja.unittests\\mocking\\videoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1EC75A7-C804-4720-AEED-189BFDF00B8D}|TestNinja.UnitTests\\TestNinja.UnitTests.csproj|solutionrelative:testninja.unittests\\mocking\\videoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1EC75A7-C804-4720-AEED-189BFDF00B8D}|TestNinja.UnitTests\\TestNinja.UnitTests.csproj|C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\testninja.unittests\\mocking\\installerhelpertets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1EC75A7-C804-4720-AEED-189BFDF00B8D}|TestNinja.UnitTests\\TestNinja.UnitTests.csproj|solutionrelative:testninja.unittests\\mocking\\installerhelpertets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|c:\\code\\repos\\unit testing nunit and moq\\starter\\source-code-starter\\testninja\\testninja\\mocking\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|solutionrelative:testninja\\mocking\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7424BC6-4F9E-4918-885B-B52E29E983A2}|TestCosole\\TestCosole.csproj|c:\\code\\repos\\unit testing nunit and moq\\starter\\source-code-starter\\testninja\\testcosole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7424BC6-4F9E-4918-885B-B52E29E983A2}|TestCosole\\TestCosole.csproj|solutionrelative:testcosole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|c:\\code\\repos\\unit testing nunit and moq\\starter\\source-code-starter\\testninja\\testninja\\mocking\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|solutionrelative:testninja\\mocking\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\testninja\\mocking\\installerherlperrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|solutionrelative:testninja\\mocking\\installerherlperrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|c:\\code\\repos\\unit testing nunit and moq\\starter\\source-code-starter\\testninja\\testninja\\mocking\\videoservice_filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|solutionrelative:testninja\\mocking\\videoservice_filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\testninja\\mocking\\installerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7328740E-4B78-464F-8352-65D887F2145F}|TestNinja\\TestNinja.csproj|solutionrelative:testninja\\mocking\\installerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VideoService.cs",
-              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoService.cs",
-              "RelativeDocumentMoniker": "TestNinja\\Mocking\\VideoService.cs",
-              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoService.cs",
-              "RelativeToolTip": "TestNinja\\Mocking\\VideoService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCEAAAA6AAAA",
+              "DocumentIndex": 2,
+              "Title": "InstallerHerlperRepo.cs",
+              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\InstallerHerlperRepo.cs",
+              "RelativeDocumentMoniker": "TestNinja\\Mocking\\InstallerHerlperRepo.cs",
+              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\InstallerHerlperRepo.cs",
+              "RelativeToolTip": "TestNinja\\Mocking\\InstallerHerlperRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:50:57.383Z",
+              "WhenOpened": "2024-06-06T16:33:30.313Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VideoRepository.cs",
-              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoRepository.cs",
-              "RelativeDocumentMoniker": "TestNinja\\Mocking\\VideoRepository.cs",
-              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoRepository.cs",
-              "RelativeToolTip": "TestNinja\\Mocking\\VideoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T16:43:16.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VideoService_FileReader.cs",
-              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoService_FileReader.cs",
-              "RelativeDocumentMoniker": "TestNinja\\Mocking\\VideoService_FileReader.cs",
-              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\VideoService_FileReader.cs",
-              "RelativeToolTip": "TestNinja\\Mocking\\VideoService_FileReader.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAnwCMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:55:35.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VideoServiceTests.cs",
-              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking\\VideoServiceTests.cs",
-              "RelativeDocumentMoniker": "TestNinja.UnitTests\\Mocking\\VideoServiceTests.cs",
-              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking\\VideoServiceTests.cs",
-              "RelativeToolTip": "TestNinja.UnitTests\\Mocking\\VideoServiceTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABMAAAA",
+              "Title": "InstallerHelperTets.cs",
+              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking\\InstallerHelperTets.cs",
+              "RelativeDocumentMoniker": "TestNinja.UnitTests\\Mocking\\InstallerHelperTets.cs",
+              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja.UnitTests\\Mocking\\InstallerHelperTets.cs",
+              "RelativeToolTip": "TestNinja.UnitTests\\Mocking\\InstallerHelperTets.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:54:21.44Z",
+              "WhenOpened": "2024-06-06T12:51:53.406Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -124,6 +99,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstallerHelper.cs",
+              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\InstallerHelper.cs",
+              "RelativeDocumentMoniker": "TestNinja\\Mocking\\InstallerHelper.cs",
+              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestNinja\\Mocking\\InstallerHelper.cs",
+              "RelativeToolTip": "TestNinja\\Mocking\\InstallerHelper.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:18:03.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\Program.cs",
+              "RelativeDocumentMoniker": "TestCosole\\Program.cs",
+              "ToolTip": "C:\\Code\\Repos\\Unit Testing Nunit and Moq\\Starter\\source-code-starter\\TestNinja\\TestCosole\\Program.cs",
+              "RelativeToolTip": "TestCosole\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:29:56.269Z",
+              "EditorCaption": ""
             }
           ]
         }
